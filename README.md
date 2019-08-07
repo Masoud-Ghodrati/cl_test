@@ -1,4 +1,4 @@
-# Unit sale prediction 
+# Unit sales prediction 
 
 The aim is to predict the unit sales for different items sold at different stores over a time period. The main data was provided in a Kaggle competition [Corporación Favorita Grocery Sales Forecasting](https://www.kaggle.com/c/favorita-grocery-sales-forecasting/data) 
 
@@ -38,7 +38,22 @@ I also aggregated the total weekly unit sales and visualized across the years to
 ![](images/img_04.png)
 
 
-From the weekly sales graph shown above and average oil prices graph, we can say that oil prices did not affect sales that much. Even during the time when the oil price was down, we can observe that sales constantly kept an almost upward trend.  
+Grouping the unit sales by their families shows that Grocery 1  has the highest unit sales followed by Beverages and Produce, and this trend is kept during the whole year. The unit sales trend for items from other families do not fluctuate a lot during the year and have a lower seasonal dependency.
+
+
+![](images/img_05.png)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

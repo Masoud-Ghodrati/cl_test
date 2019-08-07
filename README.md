@@ -40,27 +40,40 @@ I also aggregated the total weekly unit sales and visualized across the years to
 
 Grouping the unit sales by their families shows that Grocery 1  has the highest unit sales followed by Beverages and Produce, and this trend is kept during the whole year. The unit sales trend for items from other families do not fluctuate a lot during the year and have a lower seasonal dependency.
 
+Moreover, the small, but highly periodic, fluctuations across the year is aligned with the end of every month, meaning the total unit sales and unit sales for every family of items increases at the end of each month. This might be associated with people's salary payment (i.e., the unit sales increases as people have money to spend). This periodic pattern can be an important property of these time series that can help the prediction. 
+
 
 ![](images/img_05.png)
 
+Another question is how the percentage of unit sales per family changes over the weeks. This is important from the business perspective as it helps the business to predict if the demand for a particular item/family is going to be high at a certain period/time of the year. I calculated this for every family by dividing the unit sales of every family to total unit sales and plot it during the years.
+
+![](images/img_09.png)
 
 
+The figure above shows that the Grocery I has the highest percentage amongst others. Also, the percentages for most families do not change a lot across the year (apart from some time periods due to some national events, for example, Aug and March 2014), suggesting that although the total unit sales increase across the year, people buy more items from each family (so the ratio doesn't actually change and people just buy more).
 
 
+In the last visualization, I looked at the geographical dependency of unit sales. This can also be important from the business perspective as the climate and even the seasons are highly dependent on the geographical locations of cities and this can significantly affect the demand for particular products/families in a particular location.   
 
+The figures below show the percentage of unit sales for every family relative to the overall unit sales. The results show that the *geographical dependency* is pretty low for all families. This is not surprising as Ecuador is a rather small country and the climate or season factor do not affect the sales that much. This can be quite different for a large country like Australia where there can be four different seasons in different locations of the country in a certain period of the year. 
 
+![](images/img_07.png)
 
-
-
-
-
-
-
-
-
-
-
-
+![](images/img_08.png)
 
 ## Data prediction 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

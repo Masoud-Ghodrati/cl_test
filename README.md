@@ -4,9 +4,9 @@ The aim is to predict the unit sales for different items sold at different store
 
 The training data includes dates, store and item information, whether that item was being promoted, as well as the unit sales. Additional files include supplementary information that may be useful in building your models (see [here](https://www.kaggle.com/c/favorita-grocery-sales-forecasting/data) for more information).
 
-- Data overview  
-- Data visualization
-- Data prediction 
+- **Data overview**  
+- **Data visualization**
+- **Data prediction**
 
 ## Data overview  
 In total, the data includes:
@@ -27,11 +27,16 @@ The map visualization shows that Favorita has stores in many states (not all tho
 
 The total unit sales are also significantly higher in Pichincha than other states:
 
+
+
 ![](images/img_03.png)
+
 
 I also aggregated the total weekly unit sales and visualized across the years to see if there is a pattern/trend in the sale data. Overall, it can be seen that the total weekly unit sales increases during the last few weeks of the year which end in the Christmas holidays. The overall sales across the years also follow season-dependent pattern with an upward trend toward the end of the year. There is also a large decrease in sales during mid-2015, which can be associated with the volcanic eruption in Aug 2015 in the state of Pichincha. Also, the sharp, spiky increase in sales on ~18 April 2016 might be associated with the earthquake on 16 April 2016.
 
+
 ![](images/img_04.png)
+
 
 From the weekly sales graph shown above and average oil prices graph, we can say that oil prices did not affect sales that much. Even during the time when the oil price was down, we can observe that sales constantly kept an almost upward trend.  
 

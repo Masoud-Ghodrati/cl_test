@@ -70,7 +70,11 @@ After data preparation, I used 1) Linear Regression and 2) Random Forest Regress
 
 Figures below show sample predictions for linear regression and random forest (the red trend is the prediction while the blue is true values. The vertical axis shows unit sales and the horizontal axis refers to items specific dates. I forgot to put labels and legends :()
 
+![](images/LinearRegression.png)
 
+![](RandomForestRegressor.png)
+
+It can be seen that linear regression does a poor prediction while the random forest is reasonably good in predicting the unit sales. Note that the results of the random forest can even improve by training on more dates. The linear regression here performs like a moving average over dates, so it easily fails to predict (large) fluctuations. 
   
 
 

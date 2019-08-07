@@ -20,5 +20,7 @@ The test data have 60 unique items that are not included in the training data. N
 ## Data visualization
 Let's first visualize the data. This helps us to get an idea about the sales, how stores are distributed, how sales (e.g., item families) are distributed geographically, and how they change over time (e.g., do sales have seasonal dependency, or do holidays affect them and how these are reflected on the type of the items/geographical regions, and etc). I used [Tableau Software](https://www.tableau.com) as it's a nice and quick way of visualization without any coding and loading hassles. Finally, everything can be saved in a Tableau package and used by any user. However, as the data was big the corresponding Tableau package was also big, bigger than the Github upload limit. So, I only include screen shuts here.
 
+![](images/img_01.png)
+
 ## Data prediction 
 

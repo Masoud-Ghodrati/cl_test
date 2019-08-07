@@ -10,8 +10,10 @@ The training data includes dates, store and item information, whether that item 
 
 ## Data overview  
 In total, traning data includes:
+
 |# stores | # states | # unique items | # item families  | # classes |
 |---------|----------|----------------|------------------|-----------|
+|# stores | # states | # unique items | # item families  | # classes |
 
 54 stores located at 22 different cities in 16 states of Ecuador. There are 4400 unique items from 33 families and 337 classes. The test data adds XX unique items that are not included in the training data. Note that these numbers are only for training data and not test 
 

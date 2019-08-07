@@ -66,6 +66,10 @@ The figures below show the percentage of unit sales for every family relative to
 The first stage is to make a single, clean training and test data by filling the missing values and merging different tables (items, stores, holidays, etc.). The are many missing values in different columns. In most cases, I filled the missing values with the mean/median in a time window. Then, I divided the training data to 1) train and 2) validation sets. I tested the models using validation data as the test data do not have unit sales so I won't have any reference to check if the prediction method is actually working (but I predicted unit sales for the test data as well, but no true value to compare anyways). The Data preparation is done using this code ['xxpy'](codes/xx.py).
 
 ### Prediction methods
+After data preparation, I used 1) Linear Regression and 2) Random Forest Regression to predict the unit sales. To do that, I train the model using a time window of historical data and predicted the future two-week unit sales (model test/validation). I selected a two-week time window to be able to run in my machine. After the first training phase, I selected the best feature sets (using [feature importance](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier.feature_importances_)  and [ranking](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html)) and then train and predicted the unit sales based on selected features. The performance metrics are `rsquared` and `nwrmsle`.
+
+Figures below show sample predictions for linear regression and random forest (the red trend is the prediction while the blue is true values. The vertical axis shows unit sales and the horizontal axis refers to items specific dates. I forgot to put labels and legends :()
+
 
   
 

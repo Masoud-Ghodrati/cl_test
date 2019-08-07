@@ -62,6 +62,12 @@ The figures below show the percentage of unit sales for every family relative to
 ![](images/img_08.png)
 
 ## Data prediction 
+### Data preparation
+The first stage is to make a single, clean training and test data by filling the missing values and merging different tables (items, stores, holidays, etc.). The are many missing values in different columns. In most cases, I filled the missing values with the mean/median in a time window. Then, I divided the training data to 1) train and 2) validation sets. I tested the models using validation data as the test data do not have unit sales so I won't have any reference to check if the prediction method is actually working (but I predicted unit sales for the test data as well, but no true value to compare anyways). The Data preparation is done using this code ['xxpy'](codes/xx.py).
+
+### Prediction methods
+
+  
 
 
 

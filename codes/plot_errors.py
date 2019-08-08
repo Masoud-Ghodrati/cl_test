@@ -36,7 +36,7 @@ n_days      = 15
 train_weeks = np.arange(n_days, n_months*30, n_days)/7;
 
 # plot the results
-_, nwrmsle = read_errorfile(result_path, 'errors_rf_reg.txt')
+rsquared, nwrmsle = read_errorfile(result_path, 'errors_rf_reg.txt')
 
 fig, ax    = plt.subplots(nrows=1, ncols=1, sharex='col', sharey='row', figsize=(20, 7))
 ax         = plt.subplot(1, 2, 1)
@@ -45,12 +45,12 @@ plt.xlabel('# weeks trained')
 plt.ylabel('nwrmsle')
 plt.title('Random forest')
 
-#_, nwrmsle = read_errorfile(result_path, 'errors_lin_reg.txt')
-#ax         = plt.subplot(1, 2, 2)
-#plt.plot(train_weeks, nwrmsle[::4])
-#plt.xlabel('# weeks trained')
-#plt.ylabel('nwrmsle')
-#plt.title('Linear regression')
+rsquared, nwrmsle = read_errorfile(result_path, 'errors_lin_reg.txt')
+ax         = plt.subplot(1, 2, 2)
+plt.plot(train_weeks, rsquared[::4])
+plt.xlabel('# weeks trained')
+plt.ylabel('nwrmsle')
+plt.title('Linear regression')
 #
 fig.savefig(result_path + '/scores')
 

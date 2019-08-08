@@ -72,9 +72,13 @@ Figures below show sample predictions for linear regression and random forest (t
 
 ![](images/LinearRegression.png)
 
-![](RandomForestRegressor.png)
+![](images/RandomForestRegressor.png)
 
-It can be seen that linear regression does a poor prediction while the random forest is reasonably good in predicting the unit sales. Note that the results of the random forest can even improve by training on more dates. The linear regression here performs like a moving average over dates, so it easily fails to predict (large) fluctuations. 
+It can be seen that linear regression does a poor prediction while the random forest is reasonably good in predicting the unit sales. The linear regression here performs like a moving average over dates, so it easily fails to predict (large) fluctuations.
+
+Note that the results of the random forest can even improve by training on more dates. 
+
+![](images/scores.png)
   
 
 

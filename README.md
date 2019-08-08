@@ -22,20 +22,20 @@ Let's first visualize the data. This helps us to get an idea about the sales, ho
 
 The map visualization shows that Favorita has stores in many states (not all though) and the state of Pichincha has significantly higher number of stores (19, in which 18 of them are located in the capital, Quito) than others.
 
-![](images/img_01.png)
+![](visualizations_and_ppt/img_01.png)
 
 
 The total unit sales are also significantly higher in Pichincha than other states:
 
 
 
-![](images/img_03.png)
+![](visualizations_and_ppt/img_03.png)
 
 
 I also aggregated the total weekly unit sales and visualized across the years to see if there is a pattern/trend in the sale data. Overall, it can be seen that the total weekly unit sales increases during the last few weeks of the year which end in the Christmas holidays. The overall sales across the years also follow season-dependent pattern with an upward trend toward the end of the year. There is also a large decrease in sales during mid-2015, which can be associated with the volcanic eruption in Aug 2015 in the state of Pichincha. Also, the sharp, spiky increase in sales on ~18 April 2016 might be associated with the earthquake on 16 April 2016.
 
 
-![](images/img_04.png)
+![](visualizations_and_ppt/img_04.png)
 
 
 Grouping the unit sales by their families shows that Grocery 1  has the highest unit sales followed by Beverages and Produce, and this trend is kept during the whole year. The unit sales trend for items from other families do not fluctuate a lot during the year and have a lower seasonal dependency.
@@ -43,26 +43,26 @@ Grouping the unit sales by their families shows that Grocery 1  has the highest 
 Moreover, the small, but highly periodic, fluctuations across the year is aligned with the end of every month, meaning the total unit sales and unit sales for every family of items increases at the end of each month. This might be associated with people's salary payment (i.e., the unit sales increases as people have money to spend). This periodic pattern can be an important property of these time series that can help the prediction. 
 
 
-![](images/img_05.png)
+![](visualizations_and_ppt/img_05.png)
 
 Another question is how the percentage of unit sales per family changes over the weeks. This is important from the business perspective as it helps the business to predict if the demand for a particular item/family is going to be high at a certain period/time of the year. I calculated this for every family by dividing the unit sales of every family to total unit sales and plot it during the years.
 
-![](images/img_09.png)
+![](visualizations_and_ppt/img_09.png)
 
 
 The figure above shows that the Grocery I has the highest percentage amongst others. Also, the percentages for most families do not change a lot across the year (apart from some time periods due to some national events, for example, Aug and March 2014), suggesting that although the total unit sales increase across the year, people buy more items from each family (so the ratio doesn't actually change and people just buy more).
 
 Business is also interested to know if promotion on sales has any effect. This can be analysed by finding the average number of unit sales per transaction for promotion and non-promotion periods. The figure below shows that promotion did have an increasing effect on sales (the sales went up approximately 3 times during promotion).
 
-![](images/img_10.png)
+![](visualizations_and_ppt/img_10.png)
 
 In the last visualization, I looked at the geographical dependency of unit sales. This can also be important from the business perspective as the climate and even the seasons are highly dependent on the geographical locations of cities and this can significantly affect the demand for particular products/families in a particular location.   
 
 The figures below show the percentage of unit sales for every family relative to the overall unit sales. The results show that the *geographical dependency* is pretty low for all families. This is not surprising as Ecuador is a rather small country and the climate or season factor do not affect the sales that much. This can be quite different for a large country like Australia where there can be four different seasons in different locations of the country in a certain period of the year. 
 
-![](images/img_07.png)
+![](visualizations_and_ppt/img_07.png)
 
-![](images/img_08.png)
+![](visualizations_and_ppt/img_08.png)
 
 ## Data prediction 
 ### Data preparation
@@ -73,15 +73,15 @@ After data preparation, I used 1) Linear Regression and 2) Random Forest Regress
 
 Figures below show sample predictions for linear regression and random forest (the red trend is the prediction while the blue is true values. The vertical axis shows unit sales and the horizontal axis refers to items specific dates. I forgot to put labels and legends :()
 
-![](images/LinearRegression.png)
+![](visualizations_and_ppt/LinearRegression.png)
 
-![](images/RandomForestRegressor.png)
+![](visualizations_and_ppt/RandomForestRegressor.png)
 
 It can be seen that linear regression does a poor prediction while the random forest is reasonably good in predicting the unit sales. The linear regression here performs like a moving average over dates, so it easily fails to predict (large) fluctuations.
 
 Note that the results of the random forest can even improve by training on more dates. 
 
-![](images/scores.png)
+![](visualizations_and_ppt/scores.png)
   
 
 

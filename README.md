@@ -52,6 +52,9 @@ Another question is how the percentage of unit sales per family changes over the
 
 The figure above shows that the Grocery I has the highest percentage amongst others. Also, the percentages for most families do not change a lot across the year (apart from some time periods due to some national events, for example, Aug and March 2014), suggesting that although the total unit sales increase across the year, people buy more items from each family (so the ratio doesn't actually change and people just buy more).
 
+Business is also interested to know if promotion on sales has any effect. This can be analysed by finding the average number of unit sales per transaction for promotion and non-promotion periods. The figure below shows that promotion did have an increasing effect on sales (the sales went up approximately 3 times during promotion).
+
+![](images/img_10.png)
 
 In the last visualization, I looked at the geographical dependency of unit sales. This can also be important from the business perspective as the climate and even the seasons are highly dependent on the geographical locations of cities and this can significantly affect the demand for particular products/families in a particular location.   
 
